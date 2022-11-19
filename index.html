@@ -520,7 +520,21 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <form class="modal-form" name="modal_form"> 
+              <label class="footer-modal-form-label" for="user_name">Підпишіться на розсилку</label>
+             <div class="footer-form-items">
+               <input class="footer-form-field" type="email" name="user_name" id="user_name" placeholder="E-mail" />
+                <button class="footer-modal-form-btn" type="submit">
+                Підписатися</button>
+             </div>
+            </div>
+          </form>
+          
+            
+        </div>
       </div>
+      
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -533,23 +547,23 @@
         <form class="modal-form" name="modal_form">
           <div class="modal-form-group" role="group">
             <label class="modal-form-label" for="user_name">Ім'я</label>
-            <div>
+            <div class="modal-positioner">
               <input class="modal-form-field" type="text" name="user_name" id="user_name" />
-              <svg class="modal-icon" width="18px" height="18px">
+              <svg class="modal-form-icon" width="18px" height="18px">
                 <use href="./img/symbol-defs.svg#icon-person-black-18dp-1"></use>
               </svg>
             </div>
             <label class="modal-form-label" for="user_name">Телефон</label>
-            <div>
+            <div class="modal-positioner">
               <input class="modal-form-field" type="tel" name="user_name" id="user_name" />
-              <svg class="modal-icon" width="18px" height="18px">
+              <svg class="modal-form-icon" width="18px" height="18px">
                 <use href="./img/symbol-defs.svg#icon-phone-black-18dp-1"></use>
               </svg>
             </div>
             <label class="modal-form-label" for="user_name">Пошта</label>
-            <div>
+            <div class="modal-positioner">
               <input class="modal-form-field" type="email" name="user_name" id="user_name" />
-              <svg class="modal-icon" width="18px" height="18px">
+              <svg class="modal-form-icon" width="18px" height="18px">
                 <use href="./img/symbol-defs.svg#icon-email-black-18dp-1"></use>
               </svg>
             </div>
@@ -560,10 +574,10 @@
               id="user_message"
               rows="6" placeholder="Введіть текст"></textarea>
           </div>
-          <div role="group">
+          <div class="check" role="group">
             <input class="modal-form-checkbox" type="checkbox" id="user_agreement" />
-            <label for="user_agreement"
-              >Погоджуюся з розсилкою та приймаю<a href="">Умови договору</a></label
+            <label class="modal-form-agreement" for="user_agreement"
+              >Погоджуюся з розсилкою та приймаю<a class="modal-form-link" href=""> Умови договору</a></label
             >
           </div>
           <button class="modal-form-btn" type="submit">Відправити</button>
