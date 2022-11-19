@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!--modern normalize-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
+
+    <!--custom styles-->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!--fonts-family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!--шапка-->
+    <header class="header">
+      <div class="container">
+        <div class="header-container">
+          <a class="logo" href="index.html">Web<span class="logo-header">Studio</span></a>
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-item"><a href="./index.html" class="nav-link">Студія</a></li>
+              <li class="nav-item">
+                <a href="./portfolio.html" class="nav-link curent"
+                  ><span class="blue-line">Портфоліо</span></a
+                >
+              </li>
+              <li class="nav-item"><a href="./index.html" class="nav-link">Контакти</a></li>
+            </ul>
+          </nav>
+          <div class="header-group">
+            <a href="info@devstudio.com" class="info">
+              <svg class="header-logo" width="16" height="12">
+                <use href="./img/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+
+              info@devstudio.com
+            </a>
+            <a href="tel:+380961111111" class="tel">
+              <svg class="header-logo" width="10" height="16">
+                <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+
+              +38 096 111 11 11</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--portfolio-->
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <!-- <h1>filters</h1> -->
+          <ul class="list-filters">
+            <li><button type="button" class="portfolio-btn">Усі</button></li>
+            <li><button type="button" class="portfolio-btn">Веб-сайти</button></li>
+            <li><button type="button" class="portfolio-btn">Додатки</button></li>
+            <li><button type="button" class="portfolio-btn">Дизайн</button></li>
+            <li><button type="button" class="portfolio-btn">Маркетинг</button></li>
+          </ul>
+          <!-- <h2>portfolio</h2> -->
+          <ul class="list-portfolio">
+            <li>
+              <div class="cards">
+                <img src="./img/tehno.png" alt="tehno" />
+                <div class="about-portfolio">
+                  <h3 class="example">Технокряк</h3>
+                  <p class="example-item">Веб-сайт</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="cards">
+                <div class="box">
+                  <img src="./img/basket.png" alt="basket" />
+                  <div class="overlay">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="about-portfolio">
+                  <h4 class="example">Постер New Orlean vs Golden Star</h4>
+                  <p class="example-item">Дизайн</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="cards">
+                <img src="./img/seafood.png" alt="seafood" />
+                <div class="about-portfolio">
+                  <h4 class="example">Ресторан Seafood</h4>
+                  <p class="example-item">Додаток</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="cards">
+                <img src="./img/prime.png" alt="prime" />
+                <div class="about-portfolio">
+                  <h4 class="example">Проєкт Prime</h4>
+                  <p class="example-item">Маркетинг</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="cards">
+                <img src="./img/boxes.png" alt="boxes" />
+                <div class="about-portfolio">
+                  <h4 class="example">Проєкт Boxes</h4>
+                  <p class="example-item">Додаток</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="cards">
+                <img src="./img/borders.png" alt="borders" />
+                <div class="about-portfolio">
+                  <h4 class="example">Inspiration has no Borders</h4>
+                  <p class="example-item">Веб-сайт</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="cards">
+                <img src="./img/book.png" alt="book" />
+                <div class="about-portfolio">
+                  <h4 class="example">Видання Limited Edition</h4>
+                  <p class="example-item">Дизайн</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="cards">
+                <img src="./img/label.png" alt="label" />
+                <div class="about-portfolio">
+                  <h4 class="example">Проєкт LAB</h4>
+                  <p class="example-item">Маркетинг</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="cards">
+                <img src="./img/growing.png" alt="growing" />
+                <div class="about-portfolio">
+                  <h4 class="example">Growing Business</h4>
+                  <p class="example-item">Додаток</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--на подвале-->
+    <footer class="footer">
+      <div class="join-items container">
+        <div>
+          <a class="footer-logo" href="index.html">Web<span class="logo-footer">Studio</span></a>
+          <address>
+            <ul class="footer-items">
+              <li>
+                <a
+                  class="info-tel-ad"
+                  href="https://goo.gl/maps/oGdaYsp25zFcmJvW9"
+                  target="_blank"
+                  rel="nofolow"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li>
+                <a class="info-tel-footer" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              <li>
+                <a class="info-footer" href="info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join">
+          <h3 class="section-join">приєднуйтесь</h3>
+          <ul class="sosials-footer">
+            <li class="socials-item">
+              <a
+                class="sosials-link-footer"
+                href="htpps://instagram.com"
+                target="_blank"
+                rel="nooper noreferrer"
+                aria-label="Instagram icon">
+                <svg class="sosials-icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="sosials-link-footer"
+                href="htpps://instagram.com"
+                target="_blank"
+                rel="nooper noreferrer"
+                aria-label="Instagram icon">
+                <svg class="sosials-icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="sosials-link-footer"
+                href="htpps://instagram.com"
+                target="_blank"
+                rel="nooper noreferrer"
+                aria-label="Instagram icon">
+                <svg class="sosials-icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="sosials-link-footer"
+                href="htpps://instagram.com"
+                target="_blank"
+                rel="nooper noreferrer"
+                aria-label="Instagram icon">
+                <svg class="sosials-icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
