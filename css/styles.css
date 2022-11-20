@@ -597,34 +597,51 @@ a {
 }
 
 .footer-form-field{
-padding: 15px 16px;
+  padding: 15px 16px;
 
-width: 358px;
-height: 50px;
+  width: 358px;
+  height: 50px;
 
-border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 
-border-radius: 4px;
-background-color: #2F303A;
+  border-radius: 4px;
+  background-color: #2F303A;
+
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: #FFFFFF;
+}
+
+.footer-form-field:focus {
+  outline-color: var(--accent);
 }
 
 .footer-modal-form-label{
   display:inline-block ;
   font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-color: #FFFFFF;
+  color: #FFFFFF;
 
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-modal-form-btn{
-  width: 200px;
+display: inline-flex;
+
+width: 200px;
 height: 50px;
 
+padding: 10px 28px;
+
+align-items: center;
+justify-content: center;
 
 background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -637,12 +654,38 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 
 color: #ffffff;
-border: 0;
+border: none;
+cursor: pointer;
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+
 }
 
 .footer-modal-form-btn::after{
-  margin-right: 16px;
+  display: inline-block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  border-color: #2196f3;
+  background-color: #2196f3;
+  margin-left: 16px;
+  
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z' fill='white'/%3E%3C/svg%3E%0A");
+
+  background-position: center;
+  background-repeat:no-repeat;
+
+  transition: opacity 750ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.footer-modal-form-btn:hover{
+  color: #000000;
+}
+
+.footer-modal-form-btn:hover::after{
+  opacity: 0;
+}
+
 /*---------------------------------------------------------------------*/
 /*portfolio.html*/
 
@@ -935,6 +978,8 @@ border: 0;
   cursor: pointer;
 }
 
+
+
 .check {
   margin-bottom: 30px;
 }
@@ -979,7 +1024,7 @@ border: 0;
   cursor: pointer;
 
   background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
   border-radius: 4px;
 
   font-weight: 700;
@@ -991,6 +1036,11 @@ border: 0;
   letter-spacing: 0.06em;
 
   color: #ffffff;
+}
+
+.modal-form-btn:hover{
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+color: #000;
 }
 
 .modal-icon:hover,
