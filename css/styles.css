@@ -238,7 +238,7 @@ a {
   margin: 0 auto;
 }
 
-/*---кнопка---*/
+/*---кнопка  hero---*/
 
 .hero-button {
   font-family: 'Roboto';
@@ -269,11 +269,15 @@ a {
 .hero-button:focus {
   color: var(--primary-text-color);
 }
-/*---особливости---*/
+
+
+/*---особливости------------------------------------------------*/
+
+
 .box-ander-hero {
   width: 270px;
   height: 120px;
-  /* padding: 25px 100px; */
+  
 
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -295,7 +299,7 @@ a {
 
 .list-item {
   display: flex;
-  gap: 30px; /* padding-bottom: 94px; */
+  gap: 30px; 
 }
 .section-title {
   font-weight: 700;
@@ -315,7 +319,7 @@ a {
   color: var(--secondary-text-color);
 }
 
-/* -------чим ми займаэмося------- */
+/* -------чим ми займаэмося------------------------------------ */
 
 .our-work {
   padding-top: 27px;
@@ -339,7 +343,11 @@ a {
   position: relative;
 }
 
-/*--фото  та бригада--*/
+.section-develop{
+  padding-bottom: 94px;
+}
+
+/*--фото  та бригада-------------------------------------------------*/
 
 .team {
   background-color: var(--secondary-background-white);
@@ -372,7 +380,7 @@ a {
   margin-bottom: 16px;
 
   color: var(--secondary-text-color);
-  /* margin-bottom: 30px; */
+  
 }
 .section-unit {
   font-weight: 500;
@@ -382,7 +390,7 @@ a {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
-  /* margin-top: 30px; */
+
   margin-bottom: 10px;
 }
 
@@ -430,8 +438,7 @@ a {
 }
 
 .client-link {
-  /* box-sizing: border-box; */
-  /* padding: 16px 32px;  */
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -459,7 +466,7 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*----footer----*/
+/*-------------------footer---------------------------------------*/
 
 .footer {
   background-color: var(--hero-footer-background);
@@ -475,7 +482,7 @@ a {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--accent);
-  /* padding-top: 60px; */
+  
   margin-bottom: 20px;
   display: block;
 }
@@ -539,8 +546,7 @@ a {
   color: var(--accent);
 }
 
-/* .join {
-} */
+
 
 .section-join {
   font-weight: 700;
@@ -554,11 +560,11 @@ a {
 }
 
 .join-items {
-  /* padding-top: 60px;
-  padding-bottom: 60px; */
+  
+  
   display: flex;
   gap: 70px;
-  align-items: center;
+  align-items: baseline;
 }
 
 .sosials-footer {
@@ -632,6 +638,8 @@ a {
   margin-bottom: 20px;
 }
 
+/* --------------кнопка футера-------------------- */
+
 .footer-modal-form-btn{
 display: inline-flex;
 
@@ -693,7 +701,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
   display: flex;
   justify-content: center;
   gap: 8px;
-  /* padding-top: 94px; */
+  
   margin-bottom: 50px;
   margin-top: 0px;
 }
@@ -703,10 +711,10 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
   flex-wrap: wrap;
   gap: 30px;
   margin: 0px;
-  /* padding-bottom: 94px; */
+  
 }
 
-/*button*/
+/*-----------------------button ы----------------------------------*/
 .portfolio-btn {
   font-family: 'Roboto';
   font-weight: 500;
@@ -743,7 +751,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
   overflow: hidden;
 }
 
-/* -------оверлей-------- */
+/* -------оверлей---------------------------------------------- */
 
 .cards:hover > .box > .overlay {
   transform: translatey(0);
@@ -778,13 +786,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
   color: #ffffff;
 }
 
-/* .overlay code { 
-  display: inline-block;
-  padding: 2px 4px;
-  border-radius: 2px;
-  background-color: #fff;
-  color: #2a2a2a;
-} */
 
 .about-portfolio {
   padding-top: 20px;
@@ -821,7 +822,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
   color: var(--secondary-text-color);
 }
 
-/* ----------оформление модального окна-------- */
+/* ----------оформление модального окна------------------------------ */
 
 .backdrop {
   position: fixed;
@@ -982,7 +983,10 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 
 .check {
   margin-bottom: 30px;
+  margin-left: 16px;
 }
+
+
 
 .modal-form-checkbox {
   appearance: none;
@@ -1002,18 +1006,23 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .modal-form-link {
+  display: none;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24/14)px;
   letter-spacing: 0.03em;
   color: var(--accent);
 }
 
+.modal-form-agreement{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24/14)px;
+  letter-spacing: 0.03em;
+}
+
 .modal-form-btn {
-  /* position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translate(-50%, 65%);  */
+  
   display: block;
   justify-content: center;
   margin: 0 auto;
